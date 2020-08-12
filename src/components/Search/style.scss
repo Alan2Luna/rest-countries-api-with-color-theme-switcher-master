@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2.2em;
+    border-radius: 5px;
+    background-color: $white;
+    box-shadow: 0 0 5px #efebeb;
+
+    svg {
+        position: absolute;
+        left: 2em;
+        z-index: 0;
+        color: $Dark-Gray;
+    }
+
+    &__input {
+        width: 345px;
+        padding: 1.4em 5.5em;
+        border: 1px solid #f1f1f1;;
+        outline: none;
+        z-index: 1;
+        background-color: transparent;
+
+        &::placeholder {
+            color: $Dark-Gray;
+        }
+
+        &:focus {
+            border-color: #ded0d0;
+        }
+    }
+    // input:focus {
+    //     border-color: #ded0d0;
+    // }
+}

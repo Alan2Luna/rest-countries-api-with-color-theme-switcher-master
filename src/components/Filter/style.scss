@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.filter {
+    width: 220px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #efebeb;
+    background-color: $white;
+
+    .selected {
+        font-weight: 600;
+    }
+
+    &_selected {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.4em 1em 1.4em 1.6em;
+    }
+}

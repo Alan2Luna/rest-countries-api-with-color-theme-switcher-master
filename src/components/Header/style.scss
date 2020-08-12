@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+@import '../../styles/extends.scss';
+
+.header {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background-color: $white;
+    box-shadow: 0 3px 3px #e2dfdf;
+}
