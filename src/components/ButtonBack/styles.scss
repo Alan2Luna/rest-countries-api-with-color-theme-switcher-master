@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.button__back {
+    color: $Very-Dark-Blue-L;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 2em;
+    margin-top: 2em;
+    margin-bottom: 4em;
+
+    svg {
+        margin-right: 5px;
+    }
+}
+
+.button__back.dark-mode {
+    color: $white;
+    border: 1px solid $Dark-Blue-D;
+    box-shadow: 0 0 5px #141c23;
+
+}

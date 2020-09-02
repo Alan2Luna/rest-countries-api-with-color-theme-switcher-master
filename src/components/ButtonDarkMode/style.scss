@@ -1,0 +1,15 @@
+.button_darkmode {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    svg {
+        margin-right: 5px;
+    }
+
+    p {
+        font-weight: 600;
+    }
+}

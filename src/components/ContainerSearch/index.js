@@ -4,9 +4,9 @@ import './style.scss';
 import { Search } from '../Search';
 import { Filter } from '../Filter';
 
-export const ContainerSearch = () => (
+export const ContainerSearch = ({ handleChange, handleFilter, filter}) => (
     <div className="container-search">
-        <Search />
-        <Filter />
+        <Search handleChange={handleChange} />
+        <Filter handleFilter={handleFilter} filter={filter}/>
     </div>
 )

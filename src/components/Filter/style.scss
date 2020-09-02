@@ -5,15 +5,68 @@
     border-radius: 5px;
     box-shadow: 0 0 5px #efebeb;
     background-color: $white;
+    position: relative;
+    cursor: pointer;
 
     .selected {
         font-weight: 600;
     }
 
-    &_selected {
+    &__selected {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1.4em 1em 1.4em 1.6em;
+    }
+
+    &__options {
+        display: none;
+        position: absolute;
+        margin-top: 5px;
+        padding: .5em 0;
+        background-color: $white;
+        left: 0;
+        right: 0;
+    }
+
+    &__options.active {
+        display: block;
+    }
+
+    &__p {
+        padding: .5em 1.3em;
+        cursor: pointer;
+        font-weight: 600;
+
+        &:hover {
+            background-color: #e2e2e2;
+        }
+    }
+}
+
+.filter.dark-mode {
+    box-shadow: 0 0 5px #1d2935;
+
+    .selected {
+        color: $white;
+    }
+
+    svg {
+        color: $white;
+    }
+
+    .filter__selected {
+        background-color: $Dark-Blue-D;
+    }
+
+    .filter__options {
+        background-color: $Dark-Blue-D;
+    }
+
+    .filter__p {
+        color: $white;
+        &:hover {
+            background-color: #4b4c58;
+        }
     }
 }

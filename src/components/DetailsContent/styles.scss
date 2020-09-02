@@ -1,0 +1,87 @@
+@import '../../styles/variables.scss';
+
+.details__content {
+    @media (min-width: 765px) {
+        display: flex;
+    }
+
+    img {
+        width: 340px;
+
+        @media (min-width: 850px) {
+            width: 480px;
+        }
+
+        @media (min-width: 1280px) {
+            width: 580px;
+            height: 390px;
+        }
+    }
+
+    h2 {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+ 
+
+    .details__box {
+        @media (min-width: 765px) {
+            margin-left: 2em;
+        }
+
+        @media (min-width: 1020px) {
+            margin-left: 5em;
+        }
+
+        @media (min-width: 1280px) {
+            margin-left: 8em;
+        }
+    }
+
+    .detail {
+        display: flex;
+    }
+    p {
+        margin-bottom: .5em;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .details__left {
+        margin-bottom: 2em;
+    }
+
+    .details__right {
+        margin-bottom: 2em;
+
+        @media (min-width: 850px) {
+            margin-left: 3em;
+        }
+
+        @media (min-width: 1020px) {
+            margin-left: 5em;
+        }
+
+        @media (min-width: 1280px) {
+            margin-left: 8em;
+        }
+    }
+
+    .details__bordercountries {
+        p {
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+    }
+}
+
+.details__box.dark-mode{
+    color: $white;
+
+    .border_countries {
+        background-color: $Dark-Blue-D;
+        box-shadow: 0 0 5px #1a242d;
+    }
+}

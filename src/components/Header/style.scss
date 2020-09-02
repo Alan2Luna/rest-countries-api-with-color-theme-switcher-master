@@ -11,3 +11,20 @@
     background-color: $white;
     box-shadow: 0 3px 3px #e2dfdf;
 }
+
+.header.dark-mode {
+    background-color: $Dark-Blue-D;
+    box-shadow: 0 3px 3px #172633;
+
+    .header__title {
+        color: $white;
+    }
+
+    button p {
+        color: $white;
+    }
+
+    svg {
+        color: $white;
+    }
+}

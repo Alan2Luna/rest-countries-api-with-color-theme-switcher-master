@@ -1,0 +1,53 @@
+@import '../../styles/variables.scss';
+
+.country {
+    width: 270px;
+    background-color: $white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 2.7em;
+    box-shadow: 0 0 2 5px #f3ebeb;
+    cursor: pointer;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 165px;
+        object-fit: cover;
+    }
+
+    &__description {
+        padding: 1em 1.5em 2em 1.5em;
+    }
+
+    &__name {
+        font-size: 1.4em;
+        margin-bottom: .8em;
+        color: $Very-Dark-Blue-L;
+    }
+
+    &__p {
+        margin-bottom: 1em;
+        color: $Very-Dark-Blue-L;
+
+        span {
+            font: {
+                size: 1.1em;
+                weight: 600;
+            }
+        }
+    }
+}
+
+.country.dark-mode {
+    background-color: $Dark-Blue-D;
+    box-shadow: 0 0 1px 5px #1d2935;
+
+    .country__name {
+        color: $white;
+    }
+
+    .country__p {
+        color: $white;
+    }
+}

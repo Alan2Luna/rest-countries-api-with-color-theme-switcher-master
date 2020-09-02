@@ -4,11 +4,14 @@
     display: flex;
     align-items: center;
     position: relative;
-    width: 100%;
     margin-bottom: 2.2em;
     border-radius: 5px;
     background-color: $white;
     box-shadow: 0 0 5px #efebeb;
+
+    @media (min-width: 600px) {
+        margin-bottom: 0;
+    }
 
     svg {
         position: absolute;
@@ -19,6 +22,7 @@
 
     &__input {
         width: 345px;
+        height: 100%;
         padding: 1.4em 5.5em;
         border: 1px solid #f1f1f1;;
         outline: none;
@@ -36,4 +40,21 @@
     // input:focus {
     //     border-color: #ded0d0;
     // }
+}
+
+.search.dark-mode {
+    background-color: $Dark-Blue-D;
+    box-shadow: 0 0 5px #172633;
+
+    svg {
+        color: $white;
+    }
+
+    .search__input {
+        border: 1px solid #3b3c4e;
+        &::placeholder {
+            color: $white;
+            font-weight: 600;
+        }
+    }
 }

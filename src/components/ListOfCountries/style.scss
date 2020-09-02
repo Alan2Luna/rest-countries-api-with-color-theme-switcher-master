@@ -1,0 +1,16 @@
+@import '../../styles/extends.scss';
+
+.container__countries {
+    @extend %container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (min-width: 560px) {
+        justify-content: space-evenly;
+    }
+
+    @media (min-width: 850px) {
+        justify-content: space-between;
+    }
+}

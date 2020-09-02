@@ -1,0 +1,14 @@
+@import '../../styles/extends.scss';
+
+.container__details {
+    @extend %container;
+
+
+//     @media (min-width: 560px) {
+//         justify-content: space-evenly;
+//     }
+
+//     @media (min-width: 850px) {
+//         justify-content: space-between;
+//     }
+}
