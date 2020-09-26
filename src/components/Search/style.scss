@@ -51,6 +51,7 @@
     }
 
     .search__input {
+        color: $white;
         border: 1px solid #3b3c4e;
         &::placeholder {
             color: $white;
